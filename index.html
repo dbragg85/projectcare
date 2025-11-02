@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project CARE — Community AI Resources & Education</title>
+  <meta name="description" content="Project CARE: practical AI for real life, digital literacy, community resource navigation, and equitable learning pathways." />
+  <meta property="og:title" content="Project CARE — Digital dignity for every community." />
+  <meta property="og:description" content="Practical AI tools, digital skills, resource navigation, and learning pathways." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/og-card.png" />
+  <meta name="theme-color" content="#7D5BA6" />
+  <link rel="icon" href="/assets/favicon.png" />
+  <!-- Tailwind (CDN) for speed; you can swap to local build later -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            carePurple: '#7D5BA6',
+            careCharcoal: '#2F3B3B',
+            careCream: '#F9F7F2',
+            careGold: '#BFA875'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Optional: nicer focus ring for accessibility */
+    :focus-visible { outline: 3px solid #7D5BA6; outline-offset: 2px; }
+  </style>
+</head>
+<body class="bg-careCream text-careCharcoal antialiased">
+  <!-- Top bar -->
+  <header class="bg-white/80 backdrop-blur sticky top-0 z-50 border-b border-black/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <!-- TODO: replace with your Canva logo -->
+        <img src="Project CARE.png" alt="Project CARE logo" class="h-10 w-10 rounded-full ring-1 ring-black/10">
+        <span class="font-semibold tracking-wide">Project CARE</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#mission" class="hover:text-carePurple">Mission</a>
+        <a href="#what-we-do" class="hover:text-carePurple">What we do</a>
+        <a href="#weekly" class="hover:text-carePurple">Weekly AI Byte</a>
+        <a href="#pilot" class="hover:text-carePurple">Cincinnati Pilot</a>
+        <a href="#contact" class="inline-flex items-center px-3 py-1.5 bg-carePurple text-white rounded-lg hover:opacity-90">Subscribe</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-white/60 via-transparent to-transparent pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl/tight sm:text-5xl font-semibold">
+          Technology that <span class="text-carePurple">cares</span>. <br />Digital dignity for every community.
+        </h1>
+        <p class="mt-5 text-lg text-black/70">
+          Practical AI for real life, accessible digital skills, plain-language resource navigation, and learning pathways—built with and for communities.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="#weekly" class="px-5 py-3 rounded-lg bg-carePurple text-white hover:opacity-90">Get weekly AI tips</a>
+          <a href="#what-we-do" class="px-5 py-3 rounded-lg bg-white ring-1 ring-black/10 hover:ring-carePurple/40">Explore what we do</a>
+        </div>
+      </div>
+      <div class="relative">
+        <!-- Decorative card -->
+        <div class="rounded-2xl bg-white shadow-xl ring-1 ring-black/5 p-6">
+          <div class="text-sm uppercase tracking-wide text-black/50">Our pillars</div>
+          <ul class="mt-4 space-y-3 text-base">
+            <li>🤝 Community-centered support</li>
+            <li>🤖 Practical AI for everyday life</li>
+            <li>🛡️ Digital safety & privacy</li>
+            <li>🧭 Resource navigation, plain language</li>
+            <li>🎓 Learning pathways & certifications</li>
+          </ul>
+          <div class="mt-6 text-sm text-black/60">
+            Built slowly and intentionally. No hype. No gatekeeping.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section id="mission" class="py-12 lg:py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-3xl font-semibold">Our mission</h2>
+      <p class="mt-4 text-black/75">
+        Create equitable access to knowledge, technology, and essential resources by providing AI-powered tools, education,
+        and community-rooted support spaces that uplift dignity, opportunity, and resilience for every person.
+      </p>
+    </div>
+  </section>
+
+  <!-- What we do -->
+  <section id="what-we-do" class="py-12 lg:py-16 bg-white/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-3xl font-semibold">What we do</h2>
+      <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="rounded-2xl bg-white ring-1 ring-black/10 p-6">
+          <h3 class="font-semibold">AI for Everyday Life</h3>
+          <p class="mt-2 text-black/70">Bite-size prompts and tools to reduce stress, plan weeks, write calm emails, and make decisions.</p>
+        </div>
+        <div class="rounded-2xl bg-white ring-1 ring-black/10 p-6">
+          <h3 class="font-semibold">Digital Literacy</h3>
+          <p class="mt-2 text-black/70">Beginner-friendly skill building: device basics, files/cloud, safer browsing, accessibility features.</p>
+        </div>
+        <div class="rounded-2xl bg-white ring-1 ring-black/10 p-6">
+          <h3 class="font-semibold">Resource Navigation</h3>
+          <p class="mt-2 text-black/70">Plain-language guides to local & national supports—food, housing, LGBTQ+ safety, mental health.</p>
+        </div>
+        <div class="rounded-2xl bg-white ring-1 ring-black/10 p-6">
+          <h3 class="font-semibold">Learning Pathways</h3>
+          <p class="mt-2 text-black/70">On-ramps to Google AI Essentials, Microsoft AI Fundamentals, IBM SkillsBuild—and CARE micro-badges.</p>
+        </div>
+        <div class="rounded-2xl bg-white ring-1 ring-black/10 p-6">
+          <h3 class="font-semibold">Weekly AI Byte</h3>
+          <p class="mt-2 text-black/70">A weekly post with practical prompts and gentle guidance. No hype. Just helpful.</p>
+        </div>
+        <div class="rounded-2xl bg-white ring-1 ring-black/10 p-6">
+          <h3 class="font-semibold">CARE Pilot (Cincinnati)</h3>
+          <p class="mt-2 text-black/70">A tiny community hub + garden + Wi-Fi + learning lab. Built at the speed of trust.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Weekly AI Byte / Substack -->
+  <section id="weekly" class="py-12 lg:py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-3xl font-semibold">Get the Weekly AI Byte</h2>
+      <p class="mt-3 text-black/70">Simple, real-world AI tips delivered once a week. Unsubscribe anytime.</p>
+
+      <!-- Substack embed: replace SUBSTACK_URL with your publication URL -->
+      <div class="mt-6 rounded-2xl bg-white ring-1 ring-black/10 p-6">
+        <iframe src="https://substack.com/@projectcare/embed" class="w-full h-40" frameborder="0" scrolling="no"
+          title="Subscribe to Project CARE"></iframe>
+        <p class="mt-3 text-sm text-black/60">
+          If the form doesn't load, <a class="text-carePurple underline" href="https://substack.com/@projectcare" target="_blank" rel="noopener">subscribe here</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pilot -->
+  <section id="pilot" class="py-12 lg:py-16 bg-white/70">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-3xl font-semibold">Cincinnati Pilot</h2>
+      <p class="mt-4 text-black/75">
+        We're designing a community micro-hub: a tiny home with Wi-Fi, a small garden, and space for learning circles.
+        If you represent a library, neighborhood org, or city partner and want to collaborate, we'd love to talk.
+      </p>
+      <a href="#contact" class="inline-flex mt-6 px-5 py-3 rounded-lg bg-carePurple text-white hover:opacity-90">Partner with CARE</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-12 lg:py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-3xl font-semibold">Contact</h2>
+      <p class="mt-3 text-black/70">Media, partnerships, volunteers, or questions—send a note.</p>
+      <form name="contact" class="mt-6 grid sm:grid-cols-2 gap-4" onsubmit="alert('Thanks! We'll be in touch.'); return false;">
+        <input aria-label="Name" required class="rounded-lg px-4 py-3 bg-white ring-1 ring-black/10" type="text" placeholder="Name" />
+        <input aria-label="Email" required class="rounded-lg px-4 py-3 bg-white ring-1 ring-black/10" type="email" placeholder="Email" />
+        <textarea aria-label="Message" class="rounded-lg px-4 py-3 bg-white ring-1 ring-black/10 sm:col-span-2" rows="4" placeholder="Message"></textarea>
+        <button class="inline-flex justify-center items-center px-5 py-3 rounded-lg bg-carePurple text-white hover:opacity-90 sm:col-span-2">Send</button>
+      </form>
+      <p class="mt-3 text-xs text-black/50">Replace this form with your provider (Formspree, Basin, Netlify Forms) when ready.</p>
+    </div>
+  </section>
+
+  <footer class="py-10 border-t border-black/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-3">
+      <p class="text-sm text-black/60">© <span id="year"></span> Project CARE. All rights reserved.</p>
+      <nav class="text-sm flex gap-4">
+        <a href="https://substack.com/@projectcare" class="hover:text-carePurple">Substack</a>
+        <a href="#privacy" class="hover:text-carePurple">Privacy</a>
+        <a href="#terms" class="hover:text-carePurple">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
